@@ -2,7 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <Description>Test site project for varifying generic code elements</Description>
+    <Description>A test application that exercises the generic code libraries</Description>
+    <Version>1.2.0</Version>
+    <Authors>D. Reinhart</Authors>
+    <Company>Wolf Games LLC</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
