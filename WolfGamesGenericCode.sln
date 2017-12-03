@@ -4,8 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WGTestWebSite", "WGTestWebSite\WGTestWebSite.csproj", "{DE235520-F344-4E6F-A3F1-5540F089F11C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E69C034-6812-4BE9-89B4-C3BECCF703F7} = {7E69C034-6812-4BE9-89B4-C3BECCF703F7}
+		{799F2A81-4617-4076-AD6C-EE4BF0CD19DF} = {799F2A81-4617-4076-AD6C-EE4BF0CD19DF}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WGSystem", "WGSystem\WGSystem.csproj", "{799F2A81-4617-4076-AD6C-EE4BF0CD19DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WGSystem.XUnitTest", "WGSystem.XUnitTest\WGSystem.XUnitTest.csproj", "{7E69C034-6812-4BE9-89B4-C3BECCF703F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{799F2A81-4617-4076-AD6C-EE4BF0CD19DF} = {799F2A81-4617-4076-AD6C-EE4BF0CD19DF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +30,10 @@ Global
 		{799F2A81-4617-4076-AD6C-EE4BF0CD19DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{799F2A81-4617-4076-AD6C-EE4BF0CD19DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{799F2A81-4617-4076-AD6C-EE4BF0CD19DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E69C034-6812-4BE9-89B4-C3BECCF703F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E69C034-6812-4BE9-89B4-C3BECCF703F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E69C034-6812-4BE9-89B4-C3BECCF703F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E69C034-6812-4BE9-89B4-C3BECCF703F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
