@@ -16,6 +16,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WGSystem.XUnitTest", "WGSys
 		{799F2A81-4617-4076-AD6C-EE4BF0CD19DF} = {799F2A81-4617-4076-AD6C-EE4BF0CD19DF}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WGXUnit", "WGXUnit\WGXUnit.csproj", "{455E7ADF-0B11-4D27-A599-EF595D5090EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WGXUnit.XUnitTest", "WGXUnit.XUnitTest\WGXUnit.XUnitTest.csproj", "{7D89246D-542B-455E-87BA-93428B1606CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{455E7ADF-0B11-4D27-A599-EF595D5090EF} = {455E7ADF-0B11-4D27-A599-EF595D5090EF}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +41,14 @@ Global
 		{7E69C034-6812-4BE9-89B4-C3BECCF703F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E69C034-6812-4BE9-89B4-C3BECCF703F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E69C034-6812-4BE9-89B4-C3BECCF703F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455E7ADF-0B11-4D27-A599-EF595D5090EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455E7ADF-0B11-4D27-A599-EF595D5090EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455E7ADF-0B11-4D27-A599-EF595D5090EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455E7ADF-0B11-4D27-A599-EF595D5090EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D89246D-542B-455E-87BA-93428B1606CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D89246D-542B-455E-87BA-93428B1606CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D89246D-542B-455E-87BA-93428B1606CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D89246D-542B-455E-87BA-93428B1606CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

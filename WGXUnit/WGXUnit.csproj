@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Authors>D. Reinhart</Authors>
+    <Company>Wolf Games LLC</Company>
+    <Description>A library of objects designed to work with the XUnit API</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.0\WGXUnit.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
