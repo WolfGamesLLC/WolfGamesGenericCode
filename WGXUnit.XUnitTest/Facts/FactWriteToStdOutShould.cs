@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Moq;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using WGXUnit.Facts;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace WGXUnit.XUnitTest.Facts
 {
@@ -12,9 +15,14 @@ namespace WGXUnit.XUnitTest.Facts
     public class FactWriteToStdOutShould
     {
         [Fact]
-        public void RequireITestOutputHelperAtConstruction()
+        public void WriteOutputToStdOut()
         {
-            var factWriteToStdOut = new FactWriteToStdOut();
+            var mockOutputHelper = new Mock<ITestOutputHelper>();
+            string message = "Test Output";
+
+            var factWriteToStdOut = new FactWriteToStdOut(mockOutputHelper.Object);
+            factWriteToStdOut.OutputHelper.WriteLine(message);
+            mockOutputHelper.Verify(mock => mock.WriteLine(message), Times.Once);
         }
     }
 }
