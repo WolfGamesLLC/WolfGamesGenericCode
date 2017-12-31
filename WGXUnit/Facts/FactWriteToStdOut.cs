@@ -9,7 +9,7 @@ namespace WGXUnit.Facts
     /// Base fact object that allows writing from 
     /// tests to std out
     /// </summary>
-    public class FactWriteToStdOut : IDisposable
+    public class FactWriteToStdOut
     {
         /// <summary>
         /// Exposes the output helper
@@ -23,13 +23,6 @@ namespace WGXUnit.Facts
         public FactWriteToStdOut(ITestOutputHelper outputHelper)
         {
             OutputHelper = outputHelper;
-        }
-
-        /// <summary>
-        /// Allow test suites to dispose of test objects 
-        /// </summary>
-        public void Dispose()
-        {
         }
     }
 }
