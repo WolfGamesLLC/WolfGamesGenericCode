@@ -14,6 +14,9 @@ namespace WGXUnit.XUnitTest.Facts
     /// </summary>
     public class FactWriteToStdOutShould
     {
+        /// <summary>
+        /// Verify we can write to standard out
+        /// </summary>
         [Fact]
         public void WriteOutputToStdOut()
         {
